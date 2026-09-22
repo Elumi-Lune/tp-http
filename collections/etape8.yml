@@ -1,0 +1,26 @@
+info:
+  name: etape8
+  type: http
+  seq: 8
+
+http:
+  method: PATCH
+  url: 172.16.3.254:8001/etape8/api/users/12345
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "role" : "Developer",
+        "email" : "blablabla@gmail.com"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

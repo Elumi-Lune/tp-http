@@ -1,0 +1,20 @@
+info:
+  name: etape7
+  type: http
+  seq: 7
+
+http:
+  method: DELETE
+  url: 172.16.3.254:8001/et-oui-delete?filename=bonjour
+  params:
+    - name: filename
+      value: bonjour
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

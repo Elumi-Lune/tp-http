@@ -1,0 +1,21 @@
+info:
+  name: etape6
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: 172.16.3.254:8001/put-method-6
+  headers:
+    - name: Content-Type
+      value: text/html
+    - name: Accept
+      value: application/json
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
